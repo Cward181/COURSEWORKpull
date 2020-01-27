@@ -53,7 +53,7 @@ public class Stats_Units {
         try {
 
             PreparedStatement ps = db.prepareStatement("DELETE FROM Stats_Units WHERE UnitID = ?");
-            ps.setInt(1, weightID);
+            ps.setInt(1, UnitID);
             ps.executeUpdate();
 
         } catch (Exception e) {
